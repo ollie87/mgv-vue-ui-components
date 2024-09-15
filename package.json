@@ -41,7 +41,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "release": "standard-version && npm run test:unit && git push --follow-tags --no-verify",
+    "release": "npm run test:unit && git push --follow-tags --no-verify",
     "prepare": "husky",
     "pre-commit": "npm run lint",
     "pre-push": "npm run release"
